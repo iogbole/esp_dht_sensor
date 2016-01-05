@@ -2,10 +2,10 @@
 #include <SoftwareSerial.h>
 #define SSID "change_me"
 #define PASS "change_me"
-#define GATEWAY_ADDRESS "icent.nut.cc" //iotGateway address /IP address  http://icent.nut.cc:3000/
+#define GATEWAY_ADDRESS "icent.nut.cc" //iotGateway address http://icent.nut.cc:3000. Locked down to specific IP range 
 #define GATEWAY_PORT 3000
 #define chipId "101"
-#define initReqData "POST /dhts HTTP/1.1\r\nHost:"
+#define initReqData "POST /dhts.json HTTP/1.1\r\nHost:"  //remove .json if using POST forms 
 #define DHTPIN 4 // the uno digital pin I'm connected to
 #define DHTTYPE DHT22 // DHT 22  
 
